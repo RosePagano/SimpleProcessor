@@ -1,0 +1,15 @@
+LIBRARY ieee;
+USE ieee.std_logic_1164.all;
+
+ENTITY SPLIT
+IS 
+	PORT( F: IN STD_LOGIC_VECTOR(3 DOWNTO 0);
+			A, B, C, D: OUT STD_LOGIC);
+END SPLIT;
+ARCHITECTURE BEHAVIOR OF SPLIT IS 
+BEGIN
+	A <= F(0); 
+	B <= F(1);
+	C <= F(2);
+	D <= F(3);
+END BEHAVIOR;
